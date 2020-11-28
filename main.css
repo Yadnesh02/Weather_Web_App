@@ -427,22 +427,39 @@
   }
 
 
-  @media screen and (max-width: 676px){
+  @media screen and (max-width: 500px){
     .ajax-section{
       position: absolute;
-      right: -150px;
-      top: -200px;  
+      right: -238px;
+      top: -215px;  
     }
-
-  }
-
-  @media screen and (max-width: 567px)
-  {
     form{
-      position: relative;
+      position: absolute;
       top: 100px;
-      right: -140px; 
+      right: -225px; 
     }
+
+    body{
+      overflow: hidden;
+    }
+
+
+  @media screen and (max-width: 400px){
+    .ajax-section{
+      position: absolute;
+      right: -238px;
+      top: -215px;  
+    }
+    form{
+      position: absolute;
+      top: 100px;
+      right: -242px; 
+    }
+
+    body{
+      overflow: hidden;
+    }
+
   }
 
   
