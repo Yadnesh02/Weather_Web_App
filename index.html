@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web App</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./modal.css">
+    <link rel="stylesheet" type="text/css" href="./Link.css">
+    <link rel="stylesheet" type="text/css" href="./load.css">
+    <link rel="icon" href="weather.png" type="image/gif">
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<section class="top-banner">
+  <div class="container">
+    <h4 id="title">Weather Web App</h4>
+    <!-- <h1 class="heading">Weather Web App</h1> -->
+    <form>
+      <input type="text" placeholder="Search for a city" autofocus>
+      <button type="submit">SUBMIT</button>
+      <span class="msg"></span>
+    </form>
+  </div>
+</section>
+
+<section id="instructions">
+  <div class="container">
+    <div class="email" onclick="this.classList.add('expand')">
+      <div class="from">
+        <div class="from-contents">
+          <div class="name">&nbsp;Difficulty in Search &#129300</div>
+        </div>
+      </div>
+      <div class="to">
+        <div class="to-contents">
+          <div class="top">
+            <div class="name-large">Difficulty in Search ??</div>
+            <div class="x-touch" onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
+              <div class="x">
+                <div class="line1"></div>
+                <div class="line2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="row" style="margin: 20px;">
+                Enter  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;city,country
+                <br>
+                <br>
+                Example &nbsp; - &nbsp; punjab,in
+              </div>
+        
+            <div class="row">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ajax-section">
+  <div class="container">
+    <ul class="cities"></ul>
+  </div>
+</section>
+<footer class="page-footer">
+  <div class="container">
+    <p><small>Made with <spam>❤️</spam> by </small><a class="link" href="">Yadnesh Rane</a></p>
+    <!-- <small>Made with <span>❤</span> by <a href="#" target="_blank">Yadnesh Rane</a> -->
+    </small>
+  </div>
+</footer>
+
+
+<!-- Loader -->
+<div class="content">
+  <div class="loading">
+     <p>loading</p>
+     <span></span>
+  </div>
+</div>
+
+<script src="./main.js"></script>
+<script src="./modal.js"></script>
+<script src="./Link.js"></script>
+<script src="./load.js"></script>
+
+</body>
+</html>
